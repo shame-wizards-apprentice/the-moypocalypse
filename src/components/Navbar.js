@@ -11,8 +11,8 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     navBar: {
-        backgroundColor: 'rgba(255, 255, 255, 0)',
-        color: 'black',
+        backgroundColor: 'rgba(3, 111, 130, .6)',
+        color: '#dadde3',
     },
     menuButton: {
         marginLeft: 'auto',
