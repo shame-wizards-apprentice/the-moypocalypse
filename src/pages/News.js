@@ -1,13 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
-const Home = () => {
+
+const News = () => {
     return (
         <div>
             <Navbar />
-            <h1>Here's your dumb homepage, dummy</h1>
+            <h1>Here's your dumb news page, dummy</h1>
         </div>
     )
 }
 
-export default Home;
+export default News;

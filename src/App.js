@@ -4,6 +4,10 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Production from './pages/Production';
 import Moy from './pages/Moy';
+import Acting from './pages/Acting';
+import Contact from './pages/Contact';
+import CV from './pages/CV';
+import News from './pages/News';
 
 function App() {
   return (
@@ -20,6 +24,18 @@ function App() {
         </Route>
         <Route exact path={['/moy']}>
           <Moy />
+        </Route>
+        <Route exact path={['/acting']}>
+          <Acting />
+        </Route>
+        <Route exact path={['/contact']}>
+          <Contact />
+        </Route>
+        <Route exact path={['/cv']}>
+          <CV />
+        </Route>
+        <Route exact path={['/news']}>
+          <News />
         </Route>
       </Switch>
     </Router>
