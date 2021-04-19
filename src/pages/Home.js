@@ -44,6 +44,7 @@ const Home = () => {
     let history = useHistory();
     const classes = useStyles();
 
+    // Link to whichever page user clicks on
     const linkMe = (e) => {
         e.preventDefault();
         history.push(`${e.currentTarget.getAttribute('name')}`)
@@ -63,7 +64,7 @@ const Home = () => {
                 </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.introPaper}>
-                        <h3 className={classes.introText}>As you can see, Moy Hinojos is a cat. He is the founding director of the Barrel Theatre, which is proud to present its annual Christmas show, "Dreamboxes: Christmas Edition." The Barrel Theatre understands that viewing such material can be profoundly upsetting to those who have been personally victimized by Bill Walters. To combat this, management will provide complimentary shots of whiskey in whatever quantity is needed to ensure no one remembers the experience.</h3>
+                        <h3 className={classes.introText}>As you can see, Moy Hinojos is a cat who also goes by the name Grumpy Uncle Pete. He is the founding director of the Barrel Theatre, which is proud to present its annual Christmas show, "Dreamboxes: Christmas Edition." The Barrel Theatre understands that viewing such material can be profoundly upsetting to those who have been personally victimized by Bill Walters. To combat this, management will provide complimentary shots of whiskey in whatever quantity is needed to ensure no one remembers the experience.</h3>
                         <h3 className={classes.introText}>Moy is also the founding director of the Papua New Ginuea Playhouse, but you don't need to know anything about that. He produces top-quality meat babies in all situations, and can do all things through Satan who strengthens him. </h3>
                     </Paper>
                 </Grid>

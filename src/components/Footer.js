@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
     },
     heroText: {
-        textAlign: 'left',
         position: 'absolute',
         top: '50%',
         left: '50%',

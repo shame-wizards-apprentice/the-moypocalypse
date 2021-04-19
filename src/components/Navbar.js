@@ -27,6 +27,7 @@ const Navbar = () => {
     let history = useHistory();
     const classes = useStyles();
 
+    // Link to whichever page user clicks on
     const linkMe = (e) => {
         e.preventDefault();
         history.push(`${e.currentTarget.getAttribute('name')}`)
