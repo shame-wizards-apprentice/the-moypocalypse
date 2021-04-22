@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import {Link} from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
@@ -19,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.secondary,
-        height: '50vh'
+        height: '50vh',
+        boxShadow: '5px 10px 10px'
     }
 }));
 
@@ -28,8 +30,10 @@ const ProductionCard = (props) => {
 
     return (
         <div >
+
             <Grid container spacing={2}>
                 <Grid item xs={6}>
+                    <Link to={'/production'}>
                     <Card>
                         <CardActionArea>
                             <CardMedia
@@ -50,6 +54,7 @@ const ProductionCard = (props) => {
                 </Button>
                         </CardActions>
                     </Card>
+                    </Link>
                 </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>

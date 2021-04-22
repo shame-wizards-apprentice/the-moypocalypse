@@ -1,8 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Navbar from './Navbar';
-import hero from '../assets/images/hero-filler.png'
-
+import hero from '../assets/images/hero-filler.png';
 
 
 const useStyles = makeStyles((theme) => ({
