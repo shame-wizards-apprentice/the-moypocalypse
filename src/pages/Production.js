@@ -120,7 +120,7 @@ const Production = () => {
                         <Grid item xs={6}>
                             <Paper className={classes.paper}>
                                 <h3>The Manatee Nebula</h3>
-                                <h4>It's gonna look like a mantee, but then you'll realize it's a nebula. And THEN, you realize you're in space and there's no oxygen.</h4>
+                                <h4>It's gonna look like a mantee, but then you'll realize it's a nebula. And THEN, you realize you're in space.</h4>
                                 <h6>It's all part of a divine plan.</h6>
                                 
                             </Paper>

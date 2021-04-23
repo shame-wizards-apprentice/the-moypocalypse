@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         position: 'relative',
+        marginTop: '2vh'
     },
     heroText: {
         position: 'absolute',

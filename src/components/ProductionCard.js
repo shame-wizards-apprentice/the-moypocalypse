@@ -21,8 +21,9 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: theme.palette.text.secondary,
         height: '50vh',
-        boxShadow: '5px 10px 10px'
-    }
+        boxShadow: '5px 10px 10px',
+        marginTop: '5vh'
+    },
 }));
 
 const ProductionCard = (props) => {
