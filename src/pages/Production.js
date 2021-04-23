@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.secondary,
+        marginLeft: '1vw',
+        marginRight: '1vw',
+        marginTop: '1vh'
     },
     bigImage: {
         boxShadow: '5px 10px 10px',
@@ -27,6 +30,12 @@ const useStyles = makeStyles((theme) => ({
         height: '30vh',
         marginBottom: '1vh',
         marginLeft: '1vw'
+    },
+    bottomRow: {
+        marginTop: '2vh'
+    },
+    topRow: {
+        marginTop: '2vh'
     }
 }));
 
@@ -55,19 +64,21 @@ const Production = () => {
                     </Tooltip>
                 </Grid>
                 <Grid item xs={6}>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={2} className={classes.topRow}>
                         <Grid item xs={6}>
                             <Tooltip title="Lime Cheese Monstrocity">
                                 <img src={`${production1}`} alt="Lime Cheese Monstrosity" className={classes.smallImage}></img>
                             </Tooltip>
                         </Grid>
                         <Grid item xs={6}>
-                            <Tooltip title="Lime Cheese Monstrocity">
-                                <img src={`${production1}`} alt="Lime Cheese Monstrosity" className={classes.smallImage}></img>
-                            </Tooltip>
+                            <Paper className={classes.paper}>
+                                <h3>Kangaroos</h3>
+                                <h4>Most kangaroos are left handed. A group of kangaroos is called a mob.</h4>
+                                <h6>What does that have to do with anything? I have no idea. Why don't you ask the kangaroos?</h6>
+                            </Paper>
                         </Grid>
                     </Grid>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={2} className={classes.bottomRow}>
                         <Grid item xs={6}>
                             <Tooltip title="Lime Cheese Monstrocity">
                                 <img src={`${production1}`} alt="Lime Cheese Monstrosity" className={classes.smallImage}></img>
@@ -81,8 +92,6 @@ const Production = () => {
                     </Grid>
                 </Grid>
             </Grid>
-
-
 
             <Grid container spacing={3}>
                 <Grid item xs={12}>
@@ -95,7 +104,7 @@ const Production = () => {
 
             <Grid container spacing={3}>
                 <Grid item xs={6}>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={2} className={classes.topRow}>
                         <Grid item xs={6}>
                             <Tooltip title="Lime Cheese Monstrocity">
                                 <img src={`${production1}`} alt="Lime Cheese Monstrosity" className={classes.smallImage}></img>
@@ -107,11 +116,14 @@ const Production = () => {
                             </Tooltip>
                         </Grid>
                     </Grid>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={2} className={classes.bottomRow}>
                         <Grid item xs={6}>
-                            <Tooltip title="Lime Cheese Monstrocity">
-                                <img src={`${production1}`} alt="Lime Cheese Monstrosity" className={classes.smallImage}></img>
-                            </Tooltip>
+                            <Paper className={classes.paper}>
+                                <h3>The Manatee Nebula</h3>
+                                <h4>It's gonna look like a mantee, but then you'll realize it's a nebula. And THEN, you realize you're in space and there's no oxygen.</h4>
+                                <h6>It's all part of a divine plan.</h6>
+                                
+                            </Paper>
                         </Grid>
                         <Grid item xs={6}>
                             <Tooltip title="Lime Cheese Monstrocity">
