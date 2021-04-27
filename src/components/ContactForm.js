@@ -11,14 +11,14 @@ const useStyles = makeStyles((theme) => ({
             width: '50ch',
         },
     },
-    nameEmail: {
-        marginLeft: '1vh'
-    },
     button: {
         marginLeft: '2vh'
     },
     message: {
         marginTop: '2vh'
+    },
+    heading: {
+        marginLeft: '1vh'
     }
 }));
 
@@ -30,7 +30,7 @@ const ContactForm = (props) => {
         email: "",
         message: ""
     })
-    
+
     const handleChange = e => {
         const { name, value } = e.target;
         setContactState({
@@ -46,46 +46,46 @@ const ContactForm = (props) => {
 
     return (
         <form className={classes.root}>
-            <Grid container spacing={3}>
-                        <Grid container spacing={3} className={classes.nameEmail}>
-                            <Grid item xs={3}>
-                                <TextField
-                                    id="outlined-textarea"
-                                    label="Name"
-                                    placeholder="Name"
-                                    multiline
-                                    name="name"
-                                    onChange={handleChange}
-                                />
-                            </Grid>
-                            <Grid item xs={3}>
-                                <TextField
-                                    id="outlined-textarea"
-                                    label="Email"
-                                    placeholder="Email"
-                                    multiline
-                                    name="email"
-                                    onChange={handleChange}
-                                />
-                            </Grid>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <TextField
-                                className={classes.message}
-                                id="outlined-multiline-static"
-                                label="Message"
-                                multiline
-                                rows={10}
-                                placeholder="Message"
-                                variant="outlined"
-                                name="message"
-                                onChange={handleChange}
-                            />
-                        </Grid>
-                        <Grid item xs={3}>
-                        <Button className={classes.button} variant="contained" onClick={handleSubmit} >Submit</Button>
-                        </Grid>
-                    </Grid>
+                <h1 className={classes.heading}>Contact Me</h1>
+
+                <Grid item xs={6}>
+                    <TextField
+                        id="outlined-textarea"
+                        label="Name"
+                        placeholder="Name"
+                        multiline
+                        name="name"
+                        onChange={handleChange}
+                    />
+                </Grid>
+                <Grid item xs={6}>
+                    <TextField
+                        id="outlined-textarea"
+                        label="Email"
+                        placeholder="Email"
+                        multiline
+                        name="email"
+                        onChange={handleChange}
+                    />
+                </Grid>
+            
+            <Grid item xs={12}>
+                <TextField
+                    className={classes.message}
+                    id="outlined-multiline-static"
+                    label="Message"
+                    multiline
+                    rows={10}
+                    placeholder="Message"
+                    variant="outlined"
+                    name="message"
+                    onChange={handleChange}
+                />
+            </Grid>
+            <Grid item xs={3}>
+                <Button className={classes.button} variant="contained" onClick={handleSubmit} >Submit</Button>
+            </Grid>
+
         </form >
 
     )
