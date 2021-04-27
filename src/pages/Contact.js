@@ -6,7 +6,8 @@ import Grid from '@material-ui/core/Grid';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import ContactForm from '../components/ContactForm'
+import ContactForm from '../components/ContactForm';
+import SocialMedia from '../components/SocialMedia'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,6 +35,9 @@ const Contact = () => {
             <Grid container spacing={3}>
                 <Grid item xs={6}>
                     <ContactForm />
+                </Grid>
+                <Grid item xs={6}>
+                    <SocialMedia />
                 </Grid>
             </Grid>
             <Grid item xs={12}>

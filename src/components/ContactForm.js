@@ -10,16 +10,12 @@ const useStyles = makeStyles((theme) => ({
             margin: theme.spacing(1),
             width: '50ch',
         },
-    },
-    button: {
         marginLeft: '2vh'
-    },
-    message: {
-        marginTop: '2vh'
-    },
-    heading: {
+    }, 
+    button: {
         marginLeft: '1vh'
-    }
+    } 
+    
 }));
 
 
@@ -46,8 +42,7 @@ const ContactForm = (props) => {
 
     return (
         <form className={classes.root}>
-                <h1 className={classes.heading}>Contact Me</h1>
-
+                <h1>Contact Me</h1>
                 <Grid item xs={6}>
                     <TextField
                         id="outlined-textarea"
@@ -71,7 +66,6 @@ const ContactForm = (props) => {
             
             <Grid item xs={12}>
                 <TextField
-                    className={classes.message}
                     id="outlined-multiline-static"
                     label="Message"
                     multiline
